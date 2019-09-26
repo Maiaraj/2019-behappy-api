@@ -6,5 +6,6 @@ export default {
   options: {
     auth: "simple"
   },
-  handler: (request, reply) => ({msg: "logged"})
+  handler: (request, reply) => ({ msg: "logged" })
 };
+

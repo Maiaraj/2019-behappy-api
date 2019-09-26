@@ -5,8 +5,9 @@ const table_name = "users";
 const salt = bcrypt.genSaltSync();
 
 exports.seed = function(knex) {
-  return knex(table_name).del()
-    .then(function () {
+  return knex(table_name)
+    .del()
+    .then(function() {
       return knex(table_name).insert([
         {
           login: "testador",
@@ -29,3 +30,4 @@ exports.seed = function(knex) {
       ]);
     });
 };
+
