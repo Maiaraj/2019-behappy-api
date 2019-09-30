@@ -36,17 +36,13 @@ export default {
     );
   },
   options: {
+    auth: "token",
     validate: {
       payload: Joi.object({
         title: Joi.string().required(),
         description: Joi.string().required()
-      }),
-      headers: {
-        "content-type": Joi.string().required()
-      },
-      options: {
-        allowUnknown: true
-      }
+      })
     }
+
   }
 };
