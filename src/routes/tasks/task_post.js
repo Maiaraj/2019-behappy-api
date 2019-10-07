@@ -43,6 +43,5 @@ export default {
         description: Joi.string().required()
       })
     }
-
   }
 };
